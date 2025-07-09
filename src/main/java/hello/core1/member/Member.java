@@ -2,11 +2,13 @@ package hello.core1.member;
 
 public class Member {
 
-private Long id;
-private String name;
-private String grade;
+    private Long id;
+    private String name;
+    private Grade grade;
 
-    public Member(Long id, String name, String grade) {
+
+    //생성자 생성
+    public Member(Long id, String name, Grade grade) {
         this.id = id;
         this.name = name;
         this.grade = grade;
@@ -28,11 +30,12 @@ private String grade;
         this.name = name;
     }
 
-    public String getGrade() {
+    public Grade getGrade() {
         return grade;
     }
 
-    public void setGrade(String grade) {
+    public void setGrade(Grade grade) {
         this.grade = grade;
     }
 }
+
